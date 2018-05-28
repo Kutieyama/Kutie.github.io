@@ -5,12 +5,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E5DCC5;
-    font-family: arial, helvetica, sans-serif;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 5%;
 }
 
 hr {
@@ -166,6 +160,11 @@ header {
 .content {
     margin: auto;
     max-width: 1000px;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 5%;
 }
 
 }
@@ -460,4 +459,8 @@ a.active {
 
 .characters {
     flex-direction: row;
+}
+
+.product img {
+    border-radius: 5%;
 }
