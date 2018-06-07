@@ -107,6 +107,8 @@ header {
     border-bottom: solid #C14953 6px;
 }
 
+
+
 /*  Navigation  */
 
 /*  Banner  */
@@ -156,7 +158,6 @@ header {
     color: #232323;
 }
 
-
 /*  Banner End  */
 
 /*  Content  */
@@ -198,15 +199,9 @@ header {
 .character-column {
     flex: 1;
     margin: auto;
-    flex-direction: column;
-    text-align: center;
-}
-
-.character-row {
-    flex: 1;
-    margin: auto;
     flex-direction: row;
     text-align: center;
+    min-width: 25%;
 }
 
 .character-column img {
@@ -233,8 +228,11 @@ header {
 }
 
 .main-content-books {
-    align-content: center;
+    margin: auto;
     max-height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px auto;
 }
 
 .flex-column {
@@ -253,7 +251,6 @@ header {
 
 footer {
     margin: auto;
-    height: 220px;
     flex-direction: row;
     justify-content: space-between;
     background-color: #2D2D2A;
@@ -292,9 +289,125 @@ footer {
     margin-top: 0;
 }
 
+/*  Footer END  */
+
+
+.banner-product {
+    background-color: #848FA5;
+    display: flex;
+    max-width: 100%;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-product img {
+    max-width: 200px;
+    box-shadow: black 0 0 20px;
+
+}
+
+.book {
+    max-height: 300px;
+}
+
+.columnbook {
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.columnbooks {
+    flex: 1;
+    text-align: center;
+    min-width: 40%;
+    margin: 10px;
+    flex-direction: column;
+    background-color: #848FA5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.columnbooks:last-child {
+    margin-right: 0px;
+    flex-direction: column;
+    background-color: #848FA5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.columnbutton {
+    align-self: flex-end;
+}
+
+.character-column img {
+    max-width: 150px;
+}
+
+.column .icon {
+    margin-top: 40px;
+}
+
+.readmore {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #C14953;
+    border-style: none;
+}
+
+.readmore a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.characters {
+    flex-wrap: wrap;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product img {
+    border-radius: 5%;
+}
+.book-row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+a .active {
+    border-bottom: solid #C14953 6px;
+}
+
+
 /*  @media  */
 
-@media (max-width: 760px) {
+@media (max-width:1000px) {
+    
+    .content {
+        padding: 10px;
+    }
+    
+    .book-row {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    
+    .main-content-books {
+        flex-direction: column;
+        max-width: 70%;
+        align-content: center;
+    }
+    
+}
+
+
+@media (max-width: 780px) {
     header {
         flex-direction: column;
     }
@@ -373,11 +486,9 @@ footer {
     }
     
     .character-column {
+        flex: auto;
         margin: 0 10px;
-    }
-    
-    .character-row {
-        margin: 10px 0;
+        min-width: 40%;
     }
     
     .flex-row {
@@ -385,86 +496,30 @@ footer {
         flex-direction: column;
     }
     
-    .charaters {
+    .main-content-books {
         flex-direction: column;
+        max-width: 80%;
+        align-content: center;
     }
+    
+    .footer-content .logo {
+        text-align: center;
+        flex-direction: none;
+        display: block;
+    }
+    
 }
+
+@media (max-width:480px) {
+
+    .main-content-books {
+        flex-direction: column;
+        max-width: 100%;
+        align-content: center;
+        margin: 0;
+    }
+    
+}
+
 
 /*  @media end  */
-
-.banner-product {
-    background-color: #848FA5;
-    display: flex;
-    max-width: 100%;
-    min-height: 400px;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-product img {
-    max-width: 200px;
-    box-shadow: black 0 0 20px;
-
-}
-
-a.active {
-    border-bottom: solid #C14953 6px;
-}
-
-.book {
-    max-height: 300px;
-}
-
-.columnbook {
-    margin-right: 10px;
-    flex-direction: column;
-}
-
-.columnbooks {
-    margin-right: 10px;
-    flex-direction: column;
-    background-color: #848FA5;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.columnbooks:last-child {
-    margin-right: 0px;
-    flex-direction: column;
-    background-color: #848FA5;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.columnbutton {
-    align-self: flex-end;
-}
-
-.character-row img {
-    max-width: 150px;
-}
-
-.column .icon {
-    margin-top: 40px;
-}
-
-.readmore {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #C14953;
-    border-style: none;
-}
-
-.readmore a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 15px;
-}
-
-.characters {
-    flex-direction: row;
-}
-
-.product img {
-    border-radius: 5%;
-}
