@@ -73,7 +73,7 @@ header {
 .navigation li:hover {
     background-color: whitesmoke;
     color: #232323;
-    
+
 }
 
 .navigation a {
@@ -173,6 +173,7 @@ header {
 }
 
 }
+
 .column p img {
     float: left;
     max-width: 200px;
@@ -291,7 +292,6 @@ footer {
 
 /*  Footer END  */
 
-
 .banner-product {
     background-color: #848FA5;
     display: flex;
@@ -371,6 +371,7 @@ footer {
 .product img {
     border-radius: 5%;
 }
+
 .book-row {
     display: flex;
     flex-direction: row;
@@ -385,25 +386,25 @@ a .active {
 /*  @media  */
 
 @media (max-width:1000px) {
-    
+
     .content {
         padding: 10px;
     }
-    
+
     .book-row {
         flex-direction: column;
     }
-    
+
 }
 
 @media (max-width:1000px) {
-    
+
     .main-content-books {
         flex-direction: column;
         max-width: 70%;
         align-content: center;
     }
-    
+
 }
 
 
@@ -434,80 +435,80 @@ a .active {
     .navigation.open > ul {
         max-height: 600px;
     }
-    
+
     .row {
         flex: 1;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .column {
         text-align: center;
         margin-right: 0;
     }
-    
+
     .content {
         max-height: auto;
         padding: 10px;
         margin: auto;
     }
-    
+
     .sidebar {
         flex: auto;
         border-left-style: none;
         border-top-style: solid black 2px;
-        overflow-x: scroll; 
+        overflow-x: scroll;
         padding: 0;
     }
-    
+
     .flex-column {
         flex-direction: row;
     }
-    
+
     .col30 {
         width: 50%;
     }
-    
+
     .col20 {
         width: 100%;
     }
-    
+
     .col60 {
         width: 100%;
     }
-    
+
     .footer {
         height: 300;
     }
-    
+
     .footer-content {
         flex-direction: column;
         padding: 0;
     }
-    
+
     .character-column {
         flex: auto;
         margin: 0 10px;
         min-width: 40%;
     }
-    
+
     .flex-row {
         flex: 1;
         flex-direction: column;
     }
-    
+
     .main-content-books {
         flex-direction: column;
         max-width: 80%;
         align-content: center;
     }
-    
+
     .footer-content .logo {
         text-align: center;
         flex-direction: none;
         display: block;
     }
-    
+
 }
 
 @media (max-width:480px) {
@@ -518,7 +519,7 @@ a .active {
         align-content: center;
         margin: 0;
     }
-    
+
 }
 
 
