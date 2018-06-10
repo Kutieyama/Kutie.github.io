@@ -378,7 +378,7 @@ footer {
     margin: 20px 0;
 }
 
-a .active {
+li .active {
     border-bottom: solid #C14953 6px;
 }
 
